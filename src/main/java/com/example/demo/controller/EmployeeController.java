@@ -20,6 +20,11 @@ public class EmployeeController {
 	
 	@Autowired
 	private EmployeeService employeeService;
+	
+	@GetMapping(value = "/message")
+	public ResponseEntity<List<Employee>> getMessage() {
+		return new ResponseEntity<String>("Hello World!!", HttpStatus.OK);
+	}
 
 	@GetMapping(value = "/all")
 	public ResponseEntity<List<Employee>> getAllEmployees() {
