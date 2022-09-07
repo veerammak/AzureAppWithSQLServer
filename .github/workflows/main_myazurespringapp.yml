@@ -12,15 +12,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-azure-login:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: azure/login@v1
-        with:
-            creds: ${{ secrets.CREDENTIALS }}
-
-      - run: |
-          az account show
   build:
     runs-on: ubuntu-latest
 
