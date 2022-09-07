@@ -22,7 +22,7 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 	
 	@GetMapping(value = "/message")
-	public ResponseEntity<List<Employee>> getMessage() {
+	public ResponseEntity<String> getMessage() {
 		return new ResponseEntity<String>("Hello World!!", HttpStatus.OK);
 	}
 
