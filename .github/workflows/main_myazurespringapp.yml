@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            creds: ${{ secrets.CREDENTIALS }}
 
       - run: |
           az account show
